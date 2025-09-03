@@ -26,16 +26,16 @@ public class Tarot {
     public static String[] generarRoles(int cantidad) {
         String[] basicos = {
             "Pasado", "Presente", "Futuro",
-            "Obst醕ulo", "Consejo", "Resultado",
+            "Obst谩culo", "Consejo", "Resultado",
             "Extra"
         };
 
-        // Si el usuario pide menos o igual a 7, se usan los b醩icos
+        // Si el usuario pide menos o igual a 7, se usan los b谩sicos
         if (cantidad <= basicos.length) {
             return Arrays.copyOf(basicos, cantidad);
         }
 
-        // Si pide m醩 de 7, las extra se numeran
+        // Si pide m谩s de 7, las extra se numeran
         String[] roles = new String[cantidad];
         for (int i = 0; i < cantidad; i++) {
             if (i < basicos.length) {
@@ -48,96 +48,96 @@ public class Tarot {
     }
 
     public static void main(String[] args) {
-        // Arcanos Mayores
+     
         try (Scanner sc = new Scanner(System.in)) {
             // Arcanos Mayores
             List<Carta> mazo = new ArrayList<>();
             mazo.add(new Carta("El Loco", "Nuevos comienzos, aventuras, confianza."));
             mazo.add(new Carta("El Mago", "Poder personal, creatividad, habilidades."));
-            mazo.add(new Carta("La Sacerdotisa", "Sabidur韆 interior, intuici髇, misterio."));
+            mazo.add(new Carta("La Sacerdotisa", "Sabidur铆a interior, intuici贸n, misterio."));
             mazo.add(new Carta("La Emperatriz", "Fertilidad, abundancia, naturaleza."));
             mazo.add(new Carta("El Emperador", "Autoridad, estructura, liderazgo."));
-            mazo.add(new Carta("El Hierofanta", "Tradici髇, espiritualidad, ense馻nza, normas"));
-            mazo.add(new Carta("Los Enamorados", "Elecciones, amor, uni髇, armon韆"));
-            mazo.add(new Carta("El Carro", "Voluntad, control, victoria, determinaci髇"));
+            mazo.add(new Carta("El Hierofanta", "Tradici贸n, espiritualidad, ense帽anza, normas"));
+            mazo.add(new Carta("Los Enamorados", "Elecciones, amor, uni贸n, armon铆a"));
+            mazo.add(new Carta("El Carro", "Voluntad, control, victoria, determinaci贸n"));
             mazo.add(new Carta("La Justicia", "Equilibrio, verdad, justicia, responsabilidad"));
-            mazo.add(new Carta("El ermita駉", "B鷖queda interior, sabiduria, soledad, reflexi髇"));
+            mazo.add(new Carta("El ermita帽o", "B煤squeda interior, sabiduria, soledad, reflexi贸n"));
             mazo.add(new Carta("La Rueda de la Fortuna", "Ciclos, destino, cambios, suerte"));
-            mazo.add(new Carta("La Fuerza", "Valent韆, autocontrol, compasion, resilencia"));
+            mazo.add(new Carta("La Fuerza", "Valent铆a, autocontrol, compasion, resilencia"));
             mazo.add(new Carta("El Colgado", "Pausa, sacrificio, nueva perspectiva, paciencia"));
-            mazo.add(new Carta("La Muerte", "Transformaci髇, cierre de ciclos, renacimiento"));
-            mazo.add(new Carta("La Templanza", "Armon韆, equilibrio, moderaci髇, sanaci髇"));
+            mazo.add(new Carta("La Muerte", "Transformaci贸n, cierre de ciclos, renacimiento"));
+            mazo.add(new Carta("La Templanza", "Armon铆a, equilibrio, moderaci贸n, sanaci贸n"));
             mazo.add(new Carta("El Diablo", "Tentaciones, apegos, materialismo, dependencia"));
-            mazo.add(new Carta("La Torre", "Crisis, revelaci髇, destruccion de lo falso, cambio brusco"));
-            mazo.add(new Carta("La Estrella", "Esperanza, fe, inspiraci髇, calma"));
-            mazo.add(new Carta("La Luna", "Ilusiones, confusi髇, intuici髇, sue駉s"));
-            mazo.add(new Carta("El Sol", "蓌ito, claridad, vitalidad, alegr韆"));
-            mazo.add(new Carta("El Juicio", "Despertar, renovaci髇, decisiones, perd髇"));
-            mazo.add(new Carta("El Mundo", "Culminaci髇, logro, plenitud, realizaci髇"));
+            mazo.add(new Carta("La Torre", "Crisis, revelaci贸n, destruccion de lo falso, cambio brusco"));
+            mazo.add(new Carta("La Estrella", "Esperanza, fe, inspiraci贸n, calma"));
+            mazo.add(new Carta("La Luna", "Ilusiones, confusi贸n, intuici贸n, sue帽os"));
+            mazo.add(new Carta("El Sol", "脡xito, claridad, vitalidad, alegr铆a"));
+            mazo.add(new Carta("El Juicio", "Despertar, renovaci贸n, decisiones, perd贸n"));
+            mazo.add(new Carta("El Mundo", "Culminaci贸n, logro, plenitud, realizaci贸n"));
             
             // Bastos
-            mazo.add(new Carta("As de Bastos", "Nuevos comienzos, inspiraci髇, oportunidades."));
-            mazo.add(new Carta("Dos de Bastos", "Planificaci髇, visi髇 de futuro, decisiones."));
-            mazo.add(new Carta("Tres de Bastos", "Progreso, expansi髇, comercio."));
-            mazo.add(new Carta("Cuatro de Bastos", "Celebraci髇, estabilidad, logros en comunidad."));
+            mazo.add(new Carta("As de Bastos", "Nuevos comienzos, inspiraci贸n, oportunidades."));
+            mazo.add(new Carta("Dos de Bastos", "Planificaci贸n, visi贸n de futuro, decisiones."));
+            mazo.add(new Carta("Tres de Bastos", "Progreso, expansi贸n, comercio."));
+            mazo.add(new Carta("Cuatro de Bastos", "Celebraci贸n, estabilidad, logros en comunidad."));
             mazo.add(new Carta("Cinco de Bastos", "Conflictos, competencia, rivalidad."));
-            mazo.add(new Carta("Seis de Bastos", "Victoria, reconocimiento, 閤ito p鷅lico."));
+            mazo.add(new Carta("Seis de Bastos", "Victoria, reconocimiento, 茅xito p煤blico."));
             mazo.add(new Carta("Siete de Bastos", "Defensa, resistencia, perseverancia."));
-            mazo.add(new Carta("Ocho de Bastos", "Velocidad, movimiento, noticias r醦idas."));
+            mazo.add(new Carta("Ocho de Bastos", "Velocidad, movimiento, noticias r谩pidas."));
             mazo.add(new Carta("Nueve de Bastos", "Resiliencia, pruebas, defensa final."));
             mazo.add(new Carta("Diez de Bastos", "Responsabilidad, cargas, esfuerzo excesivo."));
-            mazo.add(new Carta("Sota de Bastos", "Entusiasmo, exploraci髇, energ韆 joven."));
-            mazo.add(new Carta("Caballero de Bastos", "Pasi髇, aventura, impulsividad."));
-            mazo.add(new Carta("Reina de Bastos", "Confianza, carisma, determinaci髇."));
-            mazo.add(new Carta("Rey de Bastos", "Liderazgo, visi髇, autoridad inspiradora."));
+            mazo.add(new Carta("Sota de Bastos", "Entusiasmo, exploraci贸n, energ铆a joven."));
+            mazo.add(new Carta("Caballero de Bastos", "Pasi贸n, aventura, impulsividad."));
+            mazo.add(new Carta("Reina de Bastos", "Confianza, carisma, determinaci贸n."));
+            mazo.add(new Carta("Rey de Bastos", "Liderazgo, visi贸n, autoridad inspiradora."));
             
             // Copas
-            mazo.add(new Carta("As de Copas", "Amor nuevo, creatividad, conexi髇 espiritual."));
-            mazo.add(new Carta("Dos de Copas", "Uni髇, amor, asociaci髇 arm髇ica."));
-            mazo.add(new Carta("Tres de Copas", "Amistad, celebraci髇, comunidad."));
-            mazo.add(new Carta("Cuatro de Copas", "Apat韆, meditaci髇, oportunidades ocultas."));
-            mazo.add(new Carta("Cinco de Copas", "P閞dida, tristeza, decepci髇."));
+            mazo.add(new Carta("As de Copas", "Amor nuevo, creatividad, conexi贸n espiritual."));
+            mazo.add(new Carta("Dos de Copas", "Uni贸n, amor, asociaci贸n arm贸nica."));
+            mazo.add(new Carta("Tres de Copas", "Amistad, celebraci贸n, comunidad."));
+            mazo.add(new Carta("Cuatro de Copas", "Apat铆a, meditaci贸n, oportunidades ocultas."));
+            mazo.add(new Carta("Cinco de Copas", "P茅rdida, tristeza, decepci贸n."));
             mazo.add(new Carta("Seis de Copas", "Recuerdos, nostalgia, inocencia."));
-            mazo.add(new Carta("Siete de Copas", "Ilusiones, opciones, confusi髇."));
-            mazo.add(new Carta("Ocho de Copas", "Dejar atr醩, b鷖queda espiritual, desapego."));
-            mazo.add(new Carta("Nueve de Copas", "Satisfacci髇, deseos cumplidos, bienestar."));
-            mazo.add(new Carta("Diez de Copas", "Armon韆, felicidad familiar, plenitud."));
+            mazo.add(new Carta("Siete de Copas", "Ilusiones, opciones, confusi贸n."));
+            mazo.add(new Carta("Ocho de Copas", "Dejar atr谩s, b煤squeda espiritual, desapego."));
+            mazo.add(new Carta("Nueve de Copas", "Satisfacci贸n, deseos cumplidos, bienestar."));
+            mazo.add(new Carta("Diez de Copas", "Armon铆a, felicidad familiar, plenitud."));
             mazo.add(new Carta("Sota de Copas", "Creatividad, mensajes, sensibilidad."));
             mazo.add(new Carta("Caballero de Copas", "Romance, idealismo, propuesta."));
-            mazo.add(new Carta("Reina de Copas", "Intuici髇, compasi髇, cuidado."));
-            mazo.add(new Carta("Rey de Copas", "Equilibrio emocional, sabidur韆, diplomacia."));
+            mazo.add(new Carta("Reina de Copas", "Intuici贸n, compasi贸n, cuidado."));
+            mazo.add(new Carta("Rey de Copas", "Equilibrio emocional, sabidur铆a, diplomacia."));
             
-            //? Espadas
+            // Espadas
             mazo.add(new Carta("As de Espadas", "Claridad mental, verdad, ideas nuevas."));
-            mazo.add(new Carta("Dos de Espadas", "Decisi髇 dif韈il, bloqueo, equilibrio."));
-            mazo.add(new Carta("Tres de Espadas", "Dolor, traici髇, separaci髇."));
-            mazo.add(new Carta("Cuatro de Espadas", "Descanso, recuperaci髇, reflexi髇."));
+            mazo.add(new Carta("Dos de Espadas", "Decisi贸n dif铆cil, bloqueo, equilibrio."));
+            mazo.add(new Carta("Tres de Espadas", "Dolor, traici贸n, separaci贸n."));
+            mazo.add(new Carta("Cuatro de Espadas", "Descanso, recuperaci贸n, reflexi贸n."));
             mazo.add(new Carta("Cinco de Espadas", "Derrota, conflicto, tensiones."));
-            mazo.add(new Carta("Seis de Espadas", "Transici髇, cambio, dejar atr醩."));
-            mazo.add(new Carta("Siete de Espadas", "Estrategia, enga駉, astucia."));
+            mazo.add(new Carta("Seis de Espadas", "Transici贸n, cambio, dejar atr谩s."));
+            mazo.add(new Carta("Siete de Espadas", "Estrategia, enga帽o, astucia."));
             mazo.add(new Carta("Ocho de Espadas", "Restricciones, miedos, sentirse atrapado."));
             mazo.add(new Carta("Nueve de Espadas", "Ansiedad, pesadillas, culpa."));
-            mazo.add(new Carta("Diez de Espadas", "Final doloroso, traici髇, colapso."));
+            mazo.add(new Carta("Diez de Espadas", "Final doloroso, traici贸n, colapso."));
             mazo.add(new Carta("Sota de Espadas", "Curiosidad, vigilancia, mensajes."));
-            mazo.add(new Carta("Caballero de Espadas", "Impulso, acci髇 r醦ida, desaf韔."));
+            mazo.add(new Carta("Caballero de Espadas", "Impulso, acci贸n r谩pida, desaf铆o."));
             mazo.add(new Carta("Reina de Espadas", "Claridad, verdad, independencia."));
-            mazo.add(new Carta("Rey de Espadas", "Autoridad, l骻ica, justicia."));
+            mazo.add(new Carta("Rey de Espadas", "Autoridad, l贸gica, justicia."));
             
             // Oros
             mazo.add(new Carta("As de Oros", "Nuevas oportunidades, prosperidad, inicio material."));
-            mazo.add(new Carta("Dos de Oros", "Equilibrio, adaptaci髇, multitarea."));
-            mazo.add(new Carta("Tres de Oros", "Trabajo en equipo, aprendizaje, construcci髇."));
+            mazo.add(new Carta("Dos de Oros", "Equilibrio, adaptaci贸n, multitarea."));
+            mazo.add(new Carta("Tres de Oros", "Trabajo en equipo, aprendizaje, construcci贸n."));
             mazo.add(new Carta("Cuatro de Oros", "Seguridad, control, avaricia."));
-            mazo.add(new Carta("Cinco de Oros", "P閞dida, carencia, dificultades econ髆icas."));
+            mazo.add(new Carta("Cinco de Oros", "P茅rdida, carencia, dificultades econ贸micas."));
             mazo.add(new Carta("Seis de Oros", "Generosidad, ayuda, equilibrio material."));
-            mazo.add(new Carta("Siete de Oros", "Paciencia, evaluaci髇, progreso lento."));
-            mazo.add(new Carta("Ocho de Oros", "Pr醕tica, habilidad, dedicaci髇 al trabajo."));
-            mazo.add(new Carta("Nueve de Oros", "Independencia, 閤ito material, logro personal."));
+            mazo.add(new Carta("Siete de Oros", "Paciencia, evaluaci贸n, progreso lento."));
+            mazo.add(new Carta("Ocho de Oros", "Pr谩ctica, habilidad, dedicaci贸n al trabajo."));
+            mazo.add(new Carta("Nueve de Oros", "Independencia, 茅xito material, logro personal."));
             mazo.add(new Carta("Diez de Oros", "Riqueza, legado, estabilidad familiar."));
             mazo.add(new Carta("Sota de Oros", "Nuevas ideas, estudio, oportunidades."));
             mazo.add(new Carta("Caballero de Oros", "Esfuerzo, responsabilidad, constancia."));
             mazo.add(new Carta("Reina de Oros", "Prosperidad, cuidado, seguridad material."));
-            mazo.add(new Carta("Rey de Oros", "蓌ito financiero, estabilidad, abundancia."));
+            mazo.add(new Carta("Rey de Oros", "脡xito financiero, estabilidad, abundancia."));
             
             boolean continuar = true;
             
@@ -146,7 +146,7 @@ public class Tarot {
                 Collections.shuffle(mazo);
                 
                 System.out.println("\n Bienvenido a la lectura de Tarot ");
-                System.out.print("緾u醤tas cartas deseas sacar? ");
+                System.out.print("驴Cu谩ntas cartas deseas sacar? ");
                 int cantidad = sc.nextInt();
                 
                 String[] roles = generarRoles(cantidad);
@@ -158,15 +158,16 @@ public class Tarot {
                 }
                 
                 // Preguntar si quiere otra tirada
-                System.out.print("\n縌uieres otra tirada? (s/n): ");
+                System.out.print("\n驴Quieres otra tirada? (s/n): ");
                 String respuesta = sc.next().toLowerCase();
                 
                 if (!respuesta.equals("s")) {
                     continuar = false;
-                    System.out.println("\n Gracias por consultar el Tarot. asta pronto!");
+                    System.out.println("\n Gracias por consultar el Tarot. 隆Hasta pronto!");
                 }
             }
         }
     }
 }
+
 
