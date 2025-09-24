@@ -1,21 +1,19 @@
 package clases;
 
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
-
-/**
- *
- * @author CSF12-162PC15
- */
 public class Principal {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Perro objPerro = new Perro();
+
+        objPerro.setNombre("Princeso");
+        objPerro.setTipoAlimento("Carne");
+        objPerro.setEdad(5);
+        objPerro.setMessure("Grande");
+
+        System.out.println(objPerro.getMessure() + "Nombre: " + objPerro.getNombre()
+                + "\n Alimentación: " + objPerro.getTipoAlimento()
+                + "\n Edad: " + objPerro.getEdad()
+                + "\n Tamaño: " + objPerro.getMessure());
     }
-    
+
 }
